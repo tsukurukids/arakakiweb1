@@ -8,63 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Noto Serif JP', 'Inter', serif;
-        }
-        .hero-bg {
-            /* hero-background.jpgというファイル名で画像を配置してください */
-            background-image: url('hero-background.jpg');
-            background-color: #f5eadd; 
-            background-size: cover;
-            background-position: center;
-        }
-        .menu-item-img, .product-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .nav-link {
-            position: relative;
-            padding-bottom: 8px; /* 下線のためのスペース */
-            transition: color 0.3s ease-in-out;
-            white-space: nowrap; /* メニューが改行されないように */
-        }
-        .nav-link.active {
-            color: #FFFFFF; /* White */
-            font-weight: bold;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background-color: #F97316; /* Orange-600 */
-            transition: width 0.3s ease-in-out;
-        }
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-        
-        /* --- Animation Styles --- */
-        .content-section { 
-            display: none; 
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .content-section.active { 
-            display: block; 
-        }
-        .content-section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <!-- 外部CSSファイルを読み込み -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white text-gray-800">
 
@@ -74,7 +19,6 @@
             <div class="flex items-center h-20">
                 <div class="flex-shrink-0">
                     <a href="#" class="p-2 page-link" data-target="home" aria-label="Home">
-                        <!-- ここにロゴ画像のファイルパスを指定します。例: <img src="logo.png" ...> -->
                         <img src="https://placehold.co/40x40/f0e2d0/333333?text=ロゴ" alt="ロゴ" class="h-10 w-10 rounded-full">
                     </a>
                 </div>
@@ -118,7 +62,6 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">こだわり</h2>
                 <div class="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
                     <div>
-                        <!-- ここに「こだわり」セクションの画像ファイルパスを指定します。例: <img src="concept-image.jpg" ...> -->
                         <img src="https://placehold.co/600x400/d1c1b0/333333?text=こだわりの素材" alt="こだわりの素材" class="rounded-lg shadow-lg w-full">
                     </div>
                     <div class="text-gray-700 leading-relaxed">
@@ -141,7 +84,6 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Menu Item 1 -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                        <!-- 紅芋ちんすこうの画像ファイルパスを指定します。例: <img src="beniimo.jpg" ...> -->
                         <img src="https://placehold.co/400x300/8A2BE2/FFFFFF?text=Beni-imo+Chinsuko" alt="紅芋ちんすこう" class="menu-item-img">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-2xl font-semibold text-orange-600 mb-2">紅芋ちんすこう</h3>
@@ -151,7 +93,6 @@
                     </div>
                     <!-- Menu Item 2 -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                        <!-- 月桃ちんすこうの画像ファイルパスを指定します。例: <img src="getto.jpg" ...> -->
                         <img src="https://placehold.co/400x300/90EE90/333333?text=Getto+Chinsuko" alt="月桃ちんすこう" class="menu-item-img">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-2xl font-semibold text-orange-600 mb-2">月桃ちんすこう</h3>
@@ -161,7 +102,6 @@
                     </div>
                     <!-- Menu Item 3 -->
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                         <!-- 塩ちんすこうの画像ファイルパスを指定します。例: <img src="salt.jpg" ...> -->
                         <img src="https://placehold.co/400x300/b08968/333333?text=Salt+Chinsuko" alt="塩ちんすこう" class="menu-item-img">
                         <div class="p-6 flex flex-col flex-grow">
                             <h3 class="text-2xl font-semibold text-orange-600 mb-2">ぬちまーす塩ちんすこう</h3>
@@ -179,12 +119,53 @@
                     <div class="bg-white p-6 rounded-lg shadow-md">
                         <h3 class="text-2xl font-semibold text-orange-600 mb-3">国際通り店</h3>
                         <p>住所: 〒900-0013 沖縄県那覇市牧志1丁目3-68</p><p>電話: 098-867-2949</p><p>営業時間: 10:30~18:30</p><p>定休日: なし</p>
-                        <!-- store-kokusaidori.jpgというファイル名で店舗画像を配置してください -->
-                        <img src="store-kokusaidori.jpg" alt="国際通り店の外観" class="rounded-md w-full mt-4">
+                        <img src="https://placehold.co/400x200/f0e2d0/333333?text=Kokusai+Dori+Map" alt="国際通り店の地図" class="rounded-md w-full mt-4">
                     </div>
                 </div>
                 <div class="mt-16 text-center">
                     <div class="flex justify-center items-center gap-x-3 mb-4">
                         <svg class="h-8 w-8 text-orange-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.86.399-1.249.788-.389.389-.606.782-.788 1.249-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.86.788 1.249.389.389.782.606 1.249.788.353.137.882.3 1.857.344 1.023.047 1.351.058 3.807.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.467-.182.86-.399 1.249-.788.389-.389.606-.782-.788 1.249.137-.353.3-.882.344-1.857.047-1.023.058-1.351.058-3.807v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857a3.097 3.097 0 00-.788-1.249 3.097 3.097 0 00-1.249-.788c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.86.399-1.249.788-.389.389-.606.782-.788 1.249-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.86.788 1.249.389.389.782.606 1.249.788.353.137.882.3 1.857.344 1.023.047 1.351.058 3.807.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.467-.182.86-.399 1.249-.788.389-.389.606-.782-.788 1.249.137-.353.3-.882.344-1.857.047-1.023.058-1.351.058-3.807v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857a3.097 3.097 0 00-.788-1.249 3.097 3.097 0 00-1.249-.788c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/>
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-800">インスタグラムで最新情報をチェック！</h3>
+                    </div>
+                    <div class="flex justify-center"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.instagram.com/yamaneko_chinsuko" alt="Instagram QR Code" class="rounded-lg shadow-md"></div>
+                    <p class="mt-4">アカウント名: <a href="https://www.instagram.com/yamaneko_chinsuko" target="_blank" class="text-orange-600 hover:underline">@yamaneko_chinsuko</a></p>
+                    <p class="mt-2 text-gray-600">こちらのQRコードをスキャンしてフォローしてください。</p>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">お知らせ</h2>
+                <div class="space-y-8 max-w-3xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md"><p class="text-sm text-gray-500 mb-1">2025年8月29日</p><h3 class="text-xl font-semibold text-orange-600 mb-2">夏季限定「シークヮーサーちんすこう」発売！</h3><p>爽やかな酸味が夏にぴったり。沖縄の太陽を浴びたシークヮーサーを贅沢に使用しました。</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md"><p class="text-sm text-gray-500 mb-1">2025年8月15日</p><h3 class="text-xl font-semibold text-orange-600 mb-2">お中元ギフトセットのご予約受付中</h3><p>大切な方への贈り物に、当店自慢のちんすこう詰め合わせはいかがでしょうか。オンラインショップでもご購入いただけます。</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md"><p class="text-sm text-gray-500 mb-1">2025年8月1日</p><h3 class="text-xl font-semibold text-orange-600 mb-2">オンラインショップ送料無料キャンペーン実施中</h3><p>期間限定で、オンラインショップの商品が全品送料無料となります。この機会にぜひご利用ください。</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <a href="#" class="text-xl font-bold text-white hover:text-orange-400 page-link" data-target="home">ちんすこう専門店「デモ」</a>
+            </div>
+            <nav class="flex flex-wrap justify-center space-x-4 sm:space-x-6 mb-6">
+                <a href="#" class="hover:text-orange-400 page-link" data-target="home">ホーム</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="concept">こだわり</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="menu">メニュー</a>
+                <a href="#" class="hover:text-orange-400 page-target="stores">店舗情報</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="news">お知らせ</a>
+            </nav>
+            <p class="text-sm mt-8">&copy; 2025 ちんすこう専門店「デモ」. All Rights Reserved.</p>
+            <p class="text-xs mt-2">このサイトはデモ用に作成されたものです。</p>
+        </div>
+    </footer>
+
+    <!-- 外部JavaScriptファイルを読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
