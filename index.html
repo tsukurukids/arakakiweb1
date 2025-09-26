@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ちんすこう専門店 デモサイト - ヘッダー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="arakaki.css">
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="p-2 page-link" data-target="home" aria-label="Home">
+                        <img src="https://placehold.co/40x40/f0e2d0/333333?text=ロゴ" alt="ロゴ" class="h-10 w-10 rounded-full">
+                    </a>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="flex items-center space-x-4 sm:space-x-6 ml-4 overflow-x-auto">
+                    <a href="#" class="nav-link text-base sm:text-lg text-gray-300 hover:text-white page-link active" data-target="home">ホーム</a>
+                    <a href="#" class="nav-link text-base sm:text-lg text-gray-300 hover:text-white page-link" data-target="concept">こだわり</a>
+                    <a href="#" class="nav-link text-base sm:text-lg text-gray-300 hover:text-white page-link" data-target="menu">メニュー</a>
+                    <a href="#" class="nav-link text-base sm:text-lg text-gray-300 hover:text-white page-link" data-target="stores">店舗情報</a>
+                    <a href="#" class="nav-link text-base sm:text-lg text-gray-300 hover:text-white page-link" data-target="news">お知らせ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="content-section active">
+            <div class="hero-bg h-[calc(100vh-5rem)] flex items-center justify-center text-white">
+                <div class="slideshow-container">
+                    <div class="slide active" style="background-image: url('ホームスライド用フォルダー/IMG_0589.png')"></div>
+                    <div class="slide" style="background-image: url('ホームスライド用フォルダー/IMG_0591.png')"></div>
+                    <div class="slide" style="background-image: url('ホームスライド用フォルダー/IMG_0595.png')"></div>
+                    <div class="slide" style="background-image: url('ホームスライド用フォルダー/IMG_0597.png')"></div>
+                </div>
+                <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg relative z-10">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">心和むひとときを、沖縄から</h1>
+                    <p class="text-lg sm:text-xl md:text-2xl mb-8">伝統の味と新しい挑戦が織りなす、琉球菓子の宝石。</p>
+                </div>
+            </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">ちんすこう専門店「デモ」へようこそ</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                        当店は、琉球王朝時代から愛される伝統菓子「ちんすこう」を、心を込めてお届けしています。
+                        厳選された素材と職人の技で焼き上げる、サクッとした食感と上品な甘さ。
+                        どこか懐かししくも新しい味わいを、くつろぎの時間とともにお楽しみください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <section id="concept" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">こだわり</h2>
+                <div class="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/d1c1b0/333333?text=こだわりの素材" alt="こだわりの素材" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="text-gray-700 leading-relaxed">
+                        <h3 class="text-2xl font-semibold text-orange-600 mb-4">厳選素材と伝統製法</h3>
+                        <p class="mb-4">
+                            ちんすこうの基本となる小麦粉、砂糖、ラードはすべて国産のものを厳選。特に黒糖や塩は沖縄県産のものを使用し、豊かな風味とコクを生み出しています。職人がその日の気温や湿度に合わせて生地を調整し、一つひとつ丁寧に焼き上げています。
+                        </p>
+                        <h3 class="text-2xl font-semibold text-orange-600 mb-4">新しいちんすこうへの挑戦</h3>
+                        <p>
+                            伝統の味を守りつつも、新しいちんすこうの可能性を追求しています。紅芋や月桃など、沖縄の豊かな恵みを活かした新しいフレーバーで、これまでにない感動をお届けします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">メニュー</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Menu Item 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/400x300/8A2BE2/FFFFFF?text=Beni-imo+Chinsuko" alt="紅芋ちんすこう" class="menu-item-img">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-orange-600 mb-2">紅芋ちんすこう</h3>
+                            <p class="text-gray-700 mb-3 flex-grow">沖縄県産の紅芋を贅沢に使用した、豊かな風味と鮮やかな色合いが特徴です。</p>
+                            <p class="text-xl font-bold text-gray-800">1袋350円</p>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/400x300/90EE90/333333?text=Getto+Chinsuko" alt="月桃ちんすこう" class="menu-item-img">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-orange-600 mb-2">月桃ちんすこう</h3>
+                            <p class="text-gray-700 mb-3 flex-grow">爽やかな月桃の香りが広がる、上品な味わいのちんすこう。</p>
+                            <p class="text-xl font-bold text-gray-800">1袋350円</p>
+                        </div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img src="https://placehold.co/400x300/b08968/333333?text=Salt+Chinsuko" alt="塩ちんすこう" class="menu-item-img">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-orange-600 mb-2">ぬちまーす塩ちんすこう</h3>
+                            <p class="text-gray-700 mb-3 flex-grow">ミネラル豊富な「ぬちまーす」が甘さを引き立てる逸品。</p>
+                            <p class="text-xl font-bold text-gray-800">5個入り 550円</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="stores" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">店舗情報</h2>
+                
+                <div class="max-w-lg mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-orange-600 mb-3">国際通り店</h3>
+                        <div class="space-y-2 mb-4">
+                            <p><strong>住所:</strong> 〒900-0013 沖縄県那覇市牧志1丁目3-68</p>
+                            <p><strong>電話:</strong> 098-867-2949</p>
+                            <p><strong>営業時間:</strong> 10:30~18:30</p>
+                            <p><strong>定休日:</strong> なし</p>
+                        </div>
+                        <img src="店舗情報用フォルダー/IMG_0589.png" alt="国際通り店の外観" class="rounded-md w-full mt-4">
+                    </div>
+                </div>
+                <div class="mt-16 text-center">
+                    <div class="flex justify-center items-center gap-x-3 mb-4">
+                        <svg class="h-8 w-8 text-orange-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.86.399-1.249.788-.389.389-.606.782-.788 1.249-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.86.788 1.249.389.389.782.606 1.249.788.353.137.882.3 1.857.344 1.023.047 1.351.058 3.807.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.467-.182.86-.399 1.249-.788.389-.389.606-.782-.788 1.249.137-.353.3-.882.344-1.857.047-1.023.058-1.351.058-3.807v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857a3.097 3.097 0 00-.788-1.249 3.097 3.097 0 00-1.249-.788c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/>
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-800">インスタグラムで最新情報をチェック！</h3>
+                    </div>
+                    <div class="flex justify-center"><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.instagram.com/yamaneko_chinsuko" alt="Instagram QR Code" class="rounded-lg shadow-md"></div>
+                    <p class="mt-4">アカウント名: <a href="https://www.instagram.com/yamaneko_chinsuko" target="_blank" class="text-orange-600 hover:underline">@yamaneko_chinsuko</a></p>
+                    <p class="mt-2 text-gray-600">こちらのQRコードをスキャンしてフォローしてください。</p>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">お知らせ</h2>
+                <div class="space-y-8 max-w-3xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md"><p class="text-sm text-gray-500 mb-1">2025年8月29日</p><h3 class="text-xl font-semibold text-orange-600 mb-2">夏季限定「シークヮーサーちんすこう」発売！</h3><p>爽やかな酸味が夏にぴったり。沖縄の太陽を浴びたシークヮーサーを贅沢に使用しました。</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md"><p class="text-sm text-gray-500 mb-1">2025年8月15日</p><h3 class="text-xl font-semibold text-orange-600 mb-2">お中元ギフトセットのご予約受付中</h3><p>大切な方への贈り物に、当店自慢のちんすこう詰め合わせはいかがでしょうか。オンラインショップでもご購入いただけます。</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md"><p class="text-sm text-gray-500 mb-1">2025年8月1日</p><h3 class="text-xl font-semibold text-orange-600 mb-2">オンラインショップ送料無料キャンペーン実施中</h3><p>期間限定で、オンラインショップの商品が全品送料無料となります。この機会にぜひご利用ください。</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <a href="#" class="text-xl font-bold text-white hover:text-orange-400 page-link" data-target="home">ちんすこう専門店「デモ」</a>
+            </div>
+            <nav class="flex flex-wrap justify-center space-x-4 sm:space-x-6 mb-6">
+                <a href="#" class="hover:text-orange-400 page-link" data-target="home">ホーム</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="concept">こだわり</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="menu">メニュー</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="stores">店舗情報</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="news">お知らせ</a>
+            </nav>
+            <p class="text-sm mt-8">&copy; 2025 ちんすこう専門店「デモ」. All Rights Reserved.</p>
+            <p class="text-xs mt-2">このサイトはデモ用に作成されたものです。</p>
+        </div>
+    </footer>
+
+    <script src="arakaki.js"></script>
+</body>
+</html>
