@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店舗情報 - ちんすこう専門店 デモサイト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="arakaki.css">
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="p-2" aria-label="Home">
+                        <img src="https://placehold.co/40x40/f0e2d0/333333?text=ロゴ" alt="ロゴ" class="h-10 w-10 rounded-full">
+                    </a>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="flex items-center space-x-4 sm:space-x-6 ml-4 overflow-x-auto">
+                    <a href="index.html" class="nav-link text-base sm:text-lg text-gray-300 hover:text-white">ホーム</a>
+                    <a href="concept.html" class="nav-link text-base sm:text-lg text-gray-300 hover:text-white">こだわり</a>
+                    <a href="menu.html" class="nav-link text-base sm:text-lg text-gray-300 hover:text-white">メニュー</a>
+                    <a href="stores.html" class="nav-link text-base sm:text-lg text-white font-bold">店舗情報</a>
+                    <a href="news.html" class="nav-link text-base sm:text-lg text-gray-300 hover:text-white">お知らせ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Stores Section -->
+        <section class="py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">店舗情報</h2>
+                <div class="max-w-lg mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold text-orange-600 mb-3">国際通り店</h3>
+                        <p>住所: 〒900-0013 沖縄県那覇市牧志1丁目3-68</p>
+                        <p>電話: 098-867-2949</p>
+                        <p>営業時間: 10:30~18:30</p>
+                        <p>定休日: なし</p>
+                        <img src="https://placehold.co/400x200/f0e2d0/333333?text=Kokusai+Dori+Map" alt="国際通り店の地図" class="rounded-md w-full mt-4">
+                    </div>
+                </div>
+                <div class="mt-16 text-center">
+                    <div class="flex justify-center items-center gap-x-3 mb-4">
+                        <svg class="h-8 w-8 text-orange-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.86.399-1.249.788-.389.389-.606.782-.788 1.249-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.86.788 1.249.389.389.782.606 1.249.788.353.137.882.3 1.857.344 1.023.047 1.351.058 3.807.058h.468c2.456 0 2.784-.011 3.807-.058.975-.045 1.504-.207 1.857-.344.467-.182.86-.399 1.249-.788.389-.389.606-.782-.788 1.249.137-.353.3-.882.344-1.857.047-1.023.058-1.351.058-3.807v-.468c0-2.456-.011-2.784-.058-3.807-.045-.975-.207-1.504-.344-1.857a3.097 3.097 0 00-.788-1.249 3.097 3.097 0 00-1.249-.788c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"/>
+                        </svg>
+                        <h3 class="text-2xl font-semibold text-gray-800">インスタグラムで最新情報をチェック！</h3>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.instagram.com/yamaneko_chinsuko" alt="Instagram QR Code" class="rounded-lg shadow-md">
+                    </div>
+                    <p class="mt-4">アカウント名: <a href="https://www.instagram.com/yamaneko_chinsuko" target="_blank" class="text-orange-600 hover:underline">@yamaneko_chinsuko</a></p>
+                    <p class="mt-2 text-gray-600">こちらのQRコードをスキャンしてフォローしてください。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <a href="index.html" class="text-xl font-bold text-white hover:text-orange-400">ちんすこう専門店「デモ」</a>
+            </div>
+            <nav class="flex flex-wrap justify-center space-x-4 sm:space-x-6 mb-6">
+                <a href="index.html" class="hover:text-orange-400">ホーム</a>
+                <a href="concept.html" class="hover:text-orange-400">こだわり</a>
+                <a href="menu.html" class="hover:text-orange-400">メニュー</a>
+                <a href="stores.html" class="hover:text-orange-400">店舗情報</a>
+                <a href="news.html" class="hover:text-orange-400">お知らせ</a>
+            </nav>
+            <p class="text-sm mt-8">&copy; 2025 ちんすこう専門店「デモ」. All Rights Reserved.</p>
+            <p class="text-xs mt-2">このサイトはデモ用に作成されたものです。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
